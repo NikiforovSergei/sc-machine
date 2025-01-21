@@ -7,12 +7,15 @@
 #ifndef _sc_message_h_
 #define _sc_message_h_
 
-#include <glib.h>
+#include "syslog.h"
 
-#define sc_critical(...) g_critical(__VA_ARGS__)
+//#define sc_critical(...) g_critical(__VA_ARGS__)
+#define sc_critical(...) syslog(LOG_CRIT, __VA_ARGS__)
 
-#define sc_warning(...) g_warning(__VA_ARGS__)
+//#define sc_warning(...) g_warning(__VA_ARGS__)
+#define sc_warning(...) g_warning(LOG_WARNING, __VA_ARGS__)
 
-#define sc_message(...) g_message(__VA_ARGS__)
+//#define sc_message(...) g_message(__VA_ARGS__)
+#define sc_message(...) g_message(LOG_INFO, __VA_ARGS__)
 
 #endif

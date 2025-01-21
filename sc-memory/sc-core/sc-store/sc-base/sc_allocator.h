@@ -7,7 +7,7 @@
 #ifndef _sc_allocator_h_
 #define _sc_allocator_h_
 
-#include <glib.h>
+#include "gmem.h"
 #include <memory.h>
 
 typedef gpointer sc_pointer;

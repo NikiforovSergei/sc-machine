@@ -7,10 +7,12 @@
 #ifndef _sc_thread_h_
 #define _sc_thread_h_
 
-#include <glib.h>
+#include "threads.h"
 
-typedef GThread sc_thread;
+//typedef GThread sc_thread;
+typedef thrd_t sc_thread;
 
-#define sc_thread_self g_thread_self
+//#define sc_thread_self g_thread_self
+#define sc_thread_self thrd_current
 
 #endif

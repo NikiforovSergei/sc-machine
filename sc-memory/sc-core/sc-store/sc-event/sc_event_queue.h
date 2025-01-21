@@ -7,6 +7,8 @@
 #ifndef _sc_event_queue_h_
 #define _sc_event_queue_h_
 
+#include "gthreadpool.h"
+
 #include "../../sc_memory_params.h"
 
 #include "../sc_types.h"

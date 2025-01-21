@@ -4,6 +4,10 @@
  * (See accompanying file COPYING.MIT or copy at http://opensource.org/licenses/MIT)
  */
 
+#include <stdarg.h>
+#include <stdlib.h>
+
+#include "sc_thread.h"
 #include "sc_monitor.h"
 #include "sc_allocator.h"
 
